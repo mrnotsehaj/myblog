@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad chicken</title>
+    <style>
+        body {
+            background-color: yellowgreen;
+        }
+
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .container {
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            padding: 10px;
+            border: 2px dotted purple;
+            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .container2 {
+            width: 300px;
+            height: 175px;
+            background-color: white;
+            padding: 10px;
+            border: 2px dotted purple;
+            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <script>
+            function play() {
+                document.getElementById('image').src = "../static/img/chicken2.jpg";
+                document.title = "Happy chicken"
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+        </script>
+        <input id="image" type="image" src="../static/img/chicken1.jpg" height="300px" width="250px" value="PLAY"
+            onclick="play()">
+
+        <audio id="audio" src="../static/audio/rooster.mp3"></audio>
+
+    </div>
+    <div class="container2">
+        <input id="image2" type="image" src="../static/img/farm.jpg" height="175px" width="250px" value="PLAY"
+            onclick="farm()">
+
+        <script>
+            function farm() {
+                document.getElementById('image2').src = "../static/img/farm2.jpg"
+            }
+        </script>
+    </div>
+</body>
+
+</html>

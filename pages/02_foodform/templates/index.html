@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Food Finder</title>
+    <style>
+        .main {
+            background-image: url(../static/img/plain.jpg);
+        }
+
+        .button {
+            background-color: rgb(129, 224, 91);
+            border: crimson;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="main">
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+    <h3>Dropdown Menu inside a Navigation Bar</h3>
+    <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+
+    <h2 align="center" style="font-family: Helvetica, sans-serif;">The Vegan Food Finder
+    </h2>
+    <table align="center" style="font-family: Trebuchet MS, sans-serif;">
+        <tr>
+            <td><b><u>Basic Information:</u></b></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" class="button" placeholder="Enter your name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" class="button" placeholder="Enter your email address">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select your method:
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="Choose your location" id="location" class="button">
+                    <option value="Pickup">Pickup</option>
+                    <option value="Delivery">Delivery</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select the serving size (# of people):
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" id="onetothree" name="people" value="1 to 3">
+                <label for="1 to 3">1 to 3</label>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <input type="radio" id="fourtosix" name="people" value="4 to 6">
+                <label for="4 to 6">4 to 6</label>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <input type="radio" id="eightplus" name="people" value="8+">
+                <label for="8+">8+</label>
+            </td>
+        </tr>
+        <tr>
+            <td><b><u>
+                        Choose your location:
+                    </u></b></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="toronto.html"><input type="button" name="Toronto" value="Toronto" class="button"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="portcredit.html"><input type="button" name="Port Credit" value="Port Credit"
+                        class="button"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="erinmills.html"><input type="button" name="Erin Mills" value="Erin Mills" class="button"></a>
+            </td>
+        </tr>
+    </table>
+    <h5 align="center" style="font-family: Trebuchet MS, sans-serif;">Did we help you find the perfect meal? Leave us a
+        review!</h5>
+    <p align="center"><img src="../static/img/five.png"></p>
+</body>
+
+</html>
